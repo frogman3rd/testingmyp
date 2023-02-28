@@ -1,0 +1,214 @@
+html{
+    height: 100%;
+}
+body {
+    background: -webkit-gradient(linear, left top, right bottom, from(#3723DD), to(#8b0c0c)) fixed;
+  }
+
+.intro-div {
+    display: flexbox;
+    height: 90vh;
+    margin-bottom: 10vh;
+    /* border: 1px solid yellow; */
+    flex-direction: column;
+    align-content: center;
+}
+
+.intro-button  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid yellow; */
+
+
+}
+.name-pic {
+    display: flex;
+    height: 70vh;
+    /* border: 1px solid yellow; */
+    margin: 7vh 5vh;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(38, 1, 97);
+    border-radius: 5vh;
+
+}
+
+.profile-image {
+    display: flex;
+    /* border: 1px solid yellow; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+#my-pic {
+    height:40vh;
+    width: 40vh;
+    border-radius: 10vh;
+}
+.intro-written{
+    display: flexbox;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8vh;
+    margin: 1vh;
+    color: aqua;
+    /* border: 1px solid yellow; */
+    align-items: center;
+    justify-content: center;
+}
+.nav-button{
+    height: 6vh;
+    width: 15vh;
+    border: 2px solid aqua;
+    background: none;
+    border-radius: 2vh;
+    font-size: 2.3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+}
+
+.about-info {
+    display: flex;
+    height: 30vh;
+    margin: 5vh 5vh;
+    /* border: 1px solid yellow; */
+    border-radius: 5vh;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.personal-info {
+    display: flexbox;
+    /* border: 1px solid yellow; */
+    background-color: rgb(38, 1, 97);
+    border-radius: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+    padding: 2vh;
+    font-weight: normal;
+    font-size: larger;
+    height: 65vh;
+
+}
+
+.education-info {
+    display: flexbox;
+    /* border: 1px solid yellow; */
+    border-radius: 5vh;
+    justify-content: center;
+    color: aqua;
+    padding: 2vh;
+    background-color: rgb(38, 1, 97);
+    height: 65vh;
+    width: 50vh;
+    font-size: larger;
+
+}
+
+.contact-info {
+    display: flexbox;
+    border-radius: 5vh;
+    justify-content: center;
+    color: aqua;
+    padding: 2vh;
+    background-color: rgb(38, 1, 97);
+    font-size: large;
+    height: 65vh;
+    width: 50vh;
+    font-size: larger;
+}
+
+
+@media screen and (max-width: 1000px) {
+    body { 
+        background: black;
+    }
+
+    .name-pic {
+        display: flex;
+        height: 70vh;
+        /* border: 1px solid yellow; */
+        margin: 2vh 2vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(38, 1, 97);
+        border-radius: 5vh;
+    
+    }
+    .intro-written{
+        display: flexbox;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 4vh;
+        margin: auto;
+        color: aqua;
+        /* border: 1px solid yellow; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    #my-pic {
+        height:30vh;
+        width: 30vh;
+        border-radius: 10vh;
+        margin: 5vh;
+    }
+
+    .intro-div {
+        display: flexbox;
+        height: 90vh;
+        /* border: 1px solid yellow; */
+        flex-direction: column;
+        align-content: center;
+    }
+    .intro-button{
+        margin: 4vh 2vh;
+    }
+
+    .about-info {
+        margin: 2vh 2vh;
+        flex-direction: column;
+
+    }
+    .personal-info {
+        font-size: larger;
+        height: fit-content;
+        width: inherit;
+    }
+
+    .education-info{
+        font-size: larger;
+        width: inherit;
+    }
+    .contact-info{
+        font-size: larger;
+        width: inherit;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro-written{
+        font-size: 3vh;
+    }
+
+    .intro-div {
+        display: flexbox;
+        height: 90vh;
+        /* border: 1px solid yellow; */
+        align-content: center;
+    }
+    .intro-button{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-button {
+        border: unset;
+    }
+
+    .personal-info {
+        font-size: medium;
+    }
+    
+
+}
